@@ -91,11 +91,11 @@
     opacity: 0.90;
 }
 #home{
-    color:rgb(219, 14, 14);
+    color:white;
     text-align: center;
 }
 #home p{
-    color:rgb(211, 14, 14);
+    color:white;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -182,9 +182,7 @@
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
-    align-items: center;
 } 
-
 
 #contact-box form{
     width: 40%;
@@ -196,8 +194,6 @@
 
 }
 
-
-
 /* Footer */
 footer{
     background: black;
@@ -208,7 +204,6 @@ footer{
 
 #contact-box form{
     width:60%;
-    align-items: center;
 }
 
 
