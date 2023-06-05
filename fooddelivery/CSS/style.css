@@ -1,0 +1,249 @@
+/*CSS Reset*/
+*{
+ margin: 0;
+ padding: 0;
+
+
+}
+/*CSS Variables*/
+:root{
+    --navbar-height: 10px;
+}
+/*Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar ::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/*Navigatin Bar: Logo and Image */
+#logo{
+    margin: 5px  25px;
+}
+#logo img{
+    height:35px;
+    margin: 5px  25px;
+}
+
+/*Navigatin Bar: List Styling*/
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    /*color:black*/
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 550px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#bg img{
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home::before{
+    content: "";
+  
+    position:absolute;
+    height: 300%;
+    width: 600%;
+    top:0px;
+    left:0px;
+    align-items: center;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home{
+    color:rgb(219, 14, 14);
+    text-align: center;
+}
+#home p{
+    color:rgb(211, 14, 14);
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*Services Section*/
+#services{
+    margin-top: 34px;
+    display: flex;
+    padding: 40px;
+}
+#services.box{
+   border: 2px sloid brown; 
+   padding: 100px;
+   margin: 2px 55px;
+   border-radius: 28px;
+   background: #f2f2f2;
+   margin-bottom: 20px;
+}
+#services.box img{
+    
+    height:160px;
+    margin:auto;
+    display: block;
+ }
+
+
+ 
+
+#services{}
+#services{}
+  /*Client Section*/
+  #client-section{
+    height: 344px;
+  }
+  #client-section::before{
+    content: "";
+    position:absolute;
+    background:url('..bg.jpg');
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.4;
+
+  }
+  #clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+.clients-item{
+    
+    padding: 34px;
+    
+}
+#clients img{
+    width: 150px;
+    padding: 6px;
+    height: 140px;
+}
+/* Contact us section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    align-items: center;
+} 
+
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+#contact-box form{
+    width:60%;
+    align-items: center;
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+    margin-top: 200px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+/*Utility Classes*/
+.h-primary{
+    font-size: 2.8rem;
+    
+    text-align: center;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color:white;
+    margin-left: 540px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
